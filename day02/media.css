@@ -69,7 +69,8 @@
   }
   .features > p,
   .content > p,
-  .gallery > p {
+  .gallery > p,
+  .partners > p {
     width: 70%;
   }
 
@@ -153,4 +154,11 @@
     display: inline-block;
   }
   /* Hero section */
+  .partners > .imgs {
+    gap: 40px;
+  }
+  .partners > .imgs > img {
+    width: 70px;
+    height: auto;
+  }
 }

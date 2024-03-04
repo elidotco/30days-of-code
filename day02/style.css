@@ -44,7 +44,8 @@ header > img {
 
 /*Header Button */
 header > a,
-.gallery > a {
+.gallery > a,
+.partners > a {
   padding: 10px 36px;
   border: 1px solid #fff;
 }
@@ -78,7 +79,8 @@ main {
 .hero,
 .features,
 .content,
-.gallery {
+.gallery,
+.partners {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,11 +147,14 @@ main {
 
 /* Features Section */
 .features > h2,
-.content > h2 {
+.content > h2,
+.partners > h2 {
   font-size: 50px;
 }
 .features > p,
-.content > p {
+.content > p,
+.gallery > p,
+.partners > p {
   padding: 10px 20px 100px 20px;
   width: 40%;
 }
@@ -236,4 +241,23 @@ main {
 /* Gallery Section */
 
 /* Features Section */
+
+/* About Section */
+.partners > p {
+  padding-bottom: 50px;
+}
+.partners > .imgs {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.partners > .imgs > img {
+  width: auto;
+  height: 70px;
+}
+/* About Section */
 /* Main  */
