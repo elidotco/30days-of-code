@@ -1,0 +1,156 @@
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px 10px;
+  }
+
+  header > img {
+    width: 186px;
+    height: 52px;
+  }
+  header > a {
+    padding: 10px 20px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgba(40, 39, 39, 0.4);
+    width: 100%;
+
+    text-align: center;
+    transition: 0.3s;
+
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    align-items: right;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(40deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-40deg);
+  }
+
+  /* Header end */
+
+  .hero > .images .ima {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+
+    top: -100px;
+  }
+  .hero > .images .ima > img {
+    display: inline-block;
+  }
+  .features > p,
+  .content > p,
+  .gallery > p {
+    width: 70%;
+  }
+
+  .features > .f-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features > .f-images > img {
+    width: 70%;
+    height: auto;
+  }
+  .features > .f-images > .list {
+    width: 80%;
+    display: inherit;
+    flex-direction: column;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Content Section */
+  .content-card {
+    width: 70%;
+  }
+  /* Content Section */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  header {
+    padding: 50px;
+  }
+  .hero > .images .ima {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: hidden;
+
+    top: -100px;
+  }
+  .hero > .images .ima > img {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* Hero section */
+
+  .hero > h1,
+  .hero > p {
+    width: 100%;
+    padding: 10px 50px;
+  }
+
+  .hero > h1 {
+    font-size: 48px;
+  }
+  .hero > .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero > .images img {
+    width: 300px;
+  }
+  .hero > .images .ima {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    top: -100px;
+  }
+  .hero > .images .ima > img {
+    display: inline-block;
+  }
+  /* Hero section */
+}
